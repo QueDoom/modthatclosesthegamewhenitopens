@@ -8,7 +8,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Minecraft.class)
 public class MinecraftMixin {
-
 	@Inject(method = "onGameLoadFinished", at = @At("TAIL"))
 	private void closeGame(CallbackInfo info) {
 		System.exit(69);
