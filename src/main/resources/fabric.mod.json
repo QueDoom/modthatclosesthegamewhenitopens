@@ -3,29 +3,23 @@
 	"id": "modthatclosesthegamewhenitopens",
 	"version": "${version}",
 	"name": "Modthatclosesthegamewhenitopens",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod closes the game when it opens",
 	"authors": [
-		"Me!"
+		"QueDoom"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://quedoom.com/",
+		"sources": "https://github.com/QueDoom/modthatclosesthegamewhenitopens"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modthatclosesthegamewhenitopens/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.quedoom.modthatclosesthegamewhenitopens.Modthatclosesthegamewhenitopens"
-		]
-	},
+	"license": "MIT",
+	"icon": "icon.png",
+	"environment": "client",
 	"mixins": [
 		"modthatclosesthegamewhenitopens.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25",
-		"fabric-api": "*"
+		"minecraft": ">=26.1",
+		"java": ">=25"
 	}
 }
